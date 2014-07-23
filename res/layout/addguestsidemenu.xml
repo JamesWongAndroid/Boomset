@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/portraitphone" >
+    <TextView 
+        android:id="@+id/addGuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Guest"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        />
+    <ImageView 
+        android:id="@+id/borderLine"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/row2"
+        android:layout_below="@id/addGuest"
+        />
+    <TextView 
+        android:id="@+id/guestFirstNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name"
+        android:layout_below="@id/borderLine"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        />
+    <EditText 
+        android:id="@+id/inputGuestFirstName"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:hint=" Enter First Name"
+        android:background="@drawable/roundededittext"
+        android:layout_below="@id/guestFirstNameText"
+        />
+    <TextView 
+        android:id="@+id/guestLastNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name"
+        android:layout_below="@id/inputGuestFirstName"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        />
+    <EditText 
+        android:id="@+id/inputGuestLastName"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:hint=" Enter Last Name"
+        android:background="@drawable/roundededittext"
+        android:layout_below="@id/guestLastNameText"
+        />
+    <TextView 
+        android:id="@+id/guestEmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:layout_below="@id/inputGuestLastName"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        />
+    <EditText 
+        android:id="@+id/inputGuestEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:hint=" Enter E-mail"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/roundededittext"
+        android:layout_below="@id/guestEmailText"
+        />
+    <TextView 
+        android:id="@+id/guestReservationTypeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reservation Type"
+        android:layout_below="@id/inputGuestEmail"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        />
+    <EditText 
+        android:id="@+id/inputGuestReservationType"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:hint=" Enter Reservation Type"
+        android:background="@drawable/roundededittext"
+        android:layout_below="@id/guestReservationTypeText"
+        />
+    <Button 
+        android:id="@+id/addGuestButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Guest"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+    
+</RelativeLayout>

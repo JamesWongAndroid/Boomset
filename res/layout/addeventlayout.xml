@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/portraitphone"
+    >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:id="@+id/nameText"
+        />
+    <EditText 
+        android:id="@+id/inputEventName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+     	android:hint=" Event Name"
+     	android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+     	android:padding="5dp"
+        android:background="@drawable/roundededittext"
+        android:layout_below="@id/nameText"
+        />
+    <TextView 
+        android:id="@+id/venueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Venue Name"
+        android:textStyle="bold"
+        android:layout_below="@id/inputEventName"
+        />
+    <EditText 
+        android:id="@+id/inputVenueName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+     	android:hint=" Select Venue"
+     	android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+     	android:padding="5dp"
+        android:background="@drawable/spinnerroundbox"
+        android:layout_below="@id/venueText"
+        android:focusable="true"
+        />
+    <TextView 
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Event Date"
+        android:textStyle="bold"
+        android:layout_below="@id/inputVenueName"
+        />
+    <EditText 
+        android:id="@+id/inputStartDate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+     	android:hint="Start Date"
+     	android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+     	android:padding="5dp"
+        android:background="@drawable/roundededittext"
+        android:layout_below="@id/dateText"
+        android:focusable="false"
+        />
+    <EditText 
+        android:id="@+id/inputEndDate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+     	android:hint="End Date"
+     	android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+     	android:padding="5dp"
+        android:background="@drawable/roundededittext"
+        android:layout_below="@id/inputStartDate"
+        android:focusable="false"
+        />
+    <TextView 
+        android:id="@+id/groupText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Select Group"
+        android:textStyle="bold"
+        android:layout_below="@id/inputEndDate"
+        />
+    <Spinner 
+        android:id="@+id/inputGroup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+     	android:prompt="@string/select_group"
+     	android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+     	android:padding="5dp"
+        android:background="@drawable/spinnerroundbox"
+        android:layout_below="@id/groupText"
+        />
+    <Button 
+        android:id="@+id/addEventSubmitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textStyle="bold"
+        android:layout_below="@id/inputGroup"
+        android:background="@drawable/custom_button_two"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20sp"
+        />
+
+</RelativeLayout>

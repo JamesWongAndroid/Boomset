@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray" >
+    <LinearLayout 
+        android:id="@+id/userInfoRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/darker_gray"
+        android:paddingBottom="10dp"
+        >
+        <ImageView 
+        android:id="@+id/userPicture"
+        android:layout_width="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:src="@drawable/unknownuser"
+        />
+    <TextView 
+        android:id="@+id/userName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@android:color/white"
+        />
+    </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/menuRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userInfoRow"
+        android:orientation="horizontal"
+        android:background="@android:color/darker_gray"
+        android:paddingBottom="10dp"
+        >
+    <TextView 
+        android:id="@+id/menuLable"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:text="Menu"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:background="@drawable/row"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_vertical"
+        />
+</LinearLayout>
+
+	<LinearLayout 
+        android:id="@+id/eventRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menuRow"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        >
+    	<ImageView 
+        android:id="@+id/eventsSymbol"
+        android:layout_width="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingLeft="3dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:src="@drawable/eventsicon"
+        />
+    <TextView 
+        android:id="@+id/eventsMenuButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Events"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:paddingLeft="5dp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@android:color/white"
+        />
+    </LinearLayout>
+    <ImageView 
+        android:id="@+id/dividerOneHalf"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/eventRow"
+        android:background="@drawable/row2"
+        />
+    <LinearLayout 
+        android:id="@+id/addEventRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dividerOneHalf"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        >
+        <ImageView 
+        android:id="@+id/addSymbol"
+        android:layout_width="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingLeft="3dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:src="@drawable/plusicon"
+        />
+        <TextView 
+        android:id="@+id/addEventsMenuButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Events"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:paddingLeft="5dp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@android:color/white"
+        />
+    </LinearLayout>
+    <ImageView 
+        android:id="@+id/dividerOne"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/addEventRow"
+        android:background="@drawable/row2"
+        />
+    
+    <LinearLayout 
+        android:id="@+id/SettingsRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dividerOne"
+        android:orientation="horizontal"
+        android:background="@android:color/darker_gray"
+        android:paddingBottom="10dp"
+        >
+    <TextView 
+        android:id="@+id/settingsLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:text="General Settings"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:background="@drawable/row"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_vertical"
+        />
+</LinearLayout>
+
+
+<LinearLayout 
+        android:id="@+id/groupRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SettingsRow"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        >
+    	<TextView 
+        android:id="@+id/eventsMenuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Auto Sync"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:paddingLeft="5dp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@android:color/white"
+        />
+    	<ToggleButton
+			    android:id="@+id/syncToggleButton"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textOn="On"
+			    android:textOff="Off"
+			    />
+    </LinearLayout>
+    
+		<TextView 
+		    android:id="@+id/dividerThree"
+		    android:layout_width="fill_parent"
+        	android:layout_height="30dp"
+        	android:layout_below="@id/groupRow"
+        	android:text="Display Settings"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/row"
+        android:paddingBottom="12dp"
+		    />
+		
+		
+	
+		<LinearLayout 
+		    android:id="@+id/sortNameRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/dividerThree"
+        android:paddingBottom="10dp"
+		    >
+			<TextView 
+        android:id="@+id/sortNameText"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sort By Name "
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@android:color/white"
+        />
+			<ToggleButton
+			    android:id="@+id/nameToggleButton"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textOn="First Name"
+			    android:textOff="Last Name"
+			    />
+		    
+		</LinearLayout>
+		
+		<ImageView 
+        android:id="@+id/dividerSort"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/sortNameRow"
+        android:background="@drawable/row2"
+        />
+		
+		<LinearLayout 
+		    android:id="@+id/sortDeletedRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/dividerSort"
+        android:paddingBottom="10dp"
+		    >
+			<TextView 
+        android:id="@+id/sortDeletedText"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Deactivated "
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@android:color/white"
+        />
+			<ToggleButton
+			    android:id="@+id/deletedToggleButton"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textOn="Show"
+			    android:textOff="Don't Show"
+			    />
+		    
+		</LinearLayout>
+		
+
+		<TextView 
+        android:id="@+id/dividerTwo"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/sortDeletedRow"
+        android:text="Exit"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/row"
+        />
+		
+	
+<LinearLayout 
+        android:id="@+id/LogOutRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dividerTwo"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        >
+    	<ImageView 
+        android:id="@+id/eventsSymbol"
+        android:layout_width="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingLeft="3dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logouticon"
+        />
+    <TextView 
+        android:id="@+id/eventsLogoutButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:paddingLeft="5dp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@android:color/white"
+        />
+    </LinearLayout>
+    <ImageView 
+        android:id="@+id/dividerEnd"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/LogOutRow"
+        android:background="@drawable/row2"
+        />
+</RelativeLayout>
+</ScrollView>

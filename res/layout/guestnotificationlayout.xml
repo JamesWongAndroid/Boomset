@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/portraitphone" >
+    <TextView 
+        android:id="@+id/reservationCommentHeaderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Reservation Comments"
+        android:textColor="#040404"
+        android:textSize="20dip"
+        />
+    <ImageView 
+        android:id="@+id/borderLine"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/row2"
+        android:layout_below="@id/reservationCommentHeaderText"
+        />
+    
+    <Button 
+        android:id="@+id/sendCommentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:text="Submit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText 
+        android:id="@+id/inputCommentsField"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:hint="Enter your comments"
+        android:background="@drawable/roundededittext"
+        android:layout_above="@id/sendCommentButton"
+        />
+
+</RelativeLayout>

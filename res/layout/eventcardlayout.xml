@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/portraitphone" 
+    >
+    <EditText
+        android:id="@+id/searchEvents"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Search Events" />
+
+    <event.planning.Boomset.RefreshableListView
+        android:id="@+id/eventList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchEvents"
+        android:divider="#00000000"
+		android:dividerHeight="25dip"
+		android:paddingLeft="10.0dip"
+		android:paddingRight="10.0dip"
+		android:clipToPadding="false"
+        android:drawingCacheQuality="auto"
+        android:listSelector="@drawable/list_selector"
+        android:textFilterEnabled="true" />
+    
+</RelativeLayout>

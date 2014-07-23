@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/portraitphone" >
+    <Button 
+        android:id="@+id/submitVenueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        />
+    <EditText
+        android:id="@+id/createVenue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Create a venue" 
+        android:layout_toLeftOf="@id/submitVenueButton"
+        />
+    <TextView 
+        android:id="@+id/SelectAVenueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a nearby venue"
+        android:layout_below="@id/createVenue"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        />
+    <ListView 
+        android:id="@+id/venueList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_below="@id/SelectAVenueText"
+        />
+        
+
+</RelativeLayout>

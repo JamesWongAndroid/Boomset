@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+    
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:padding="3dip" >
+        <ImageView
+            android:id="@+id/eventPicture"
+            android:contentDescription="@string/app_name"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:src="@drawable/ipadicon" />
+        </LinearLayout>
+    <ImageView
+        android:id="@+id/arrow"
+        android:contentDescription="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrow" />
+    <TextView
+        android:id="@+id/eventNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/groupIcon"
+        android:layout_marginLeft="75dip"
+        android:paddingBottom ="1dip"
+        android:lines="1"
+        android:ellipsize="marquee"
+        android:text="Event Name"
+        android:textColor="#040404"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:typeface="sans" />
+    <TextView 
+        android:id="@+id/startDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dip"
+        android:textColor="#040404"
+        android:layout_below="@id/eventNameText"
+        android:lines="1"
+        android:ellipsize="marquee"
+        android:layout_toRightOf="@+id/groupIcon"
+        android:text="Date"
+        />
+    <TextView 
+        android:id="@+id/venueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dip"
+        android:lines="1"
+        android:ellipsize="marquee"
+        android:textColor="#040404"
+        android:layout_below="@id/startDateText"
+        android:layout_toRightOf="@id/groupIcon"
+        android:text="Venue"
+        />
+    <ImageView 
+        android:id="@+id/eventGroupIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dip"
+        android:layout_below="@id/venueText"
+        android:src="@drawable/eventgroupicon"
+        />
+    <TextView 
+        android:id="@+id/groupText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:ellipsize="marquee"
+        android:layout_below="@id/venueText"
+        android:textColor="#040404"
+        android:layout_toRightOf="@id/eventGroupIcon"
+        android:text="Group"
+        />
+</RelativeLayout>

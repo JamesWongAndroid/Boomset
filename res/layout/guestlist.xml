@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/portraitphone"
+     >
+     <DigitalClock 
+        android:id="@+id/currentClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format12Hour="HH:mm:ss"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        />
+     <TextView 
+        android:id="@+id/attendenceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:text="Attendence: 0 of 0"
+         />
+    <EditText
+        android:id="@+id/searchGuests"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/currentClock"
+        android:hint="Search Guests" />
+    <event.planning.Boomset.RefreshableListView
+        android:id="@+id/guestList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchGuests"
+        android:divider="#b5b5b5"
+        android:dividerHeight="1dp"
+        android:drawingCacheQuality="auto"
+        android:listSelector="@drawable/list_selector"
+        android:textFilterEnabled="true" />
+    
+
+</RelativeLayout>
